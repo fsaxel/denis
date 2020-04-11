@@ -1,0 +1,560 @@
+:root {
+    --rojo: rgb(201, 45, 45);
+}
+
+html {
+    box-sizing: border-box;
+}
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 62.5%;
+    line-height: 2;
+    font-family: 'Open Sans', sans-serif;
+    /*background: #0f0c29;
+    background: -webkit-linear-gradient(to bottom, #24243e, #302b63, #0f0c29);
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+*/
+}
+/** Globales **/
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 95%;
+}
+h1, h2, h3, h4 {
+    font-family: 'Open Sans', sans-serif;}
+h1 {
+    font-size: 4.8rem;
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 3.2rem;
+}
+h4 {
+    font-size: 2.8rem;
+}
+img {
+    max-width: 100%;
+}
+
+
+/** Header **/
+.arriba {
+    display: flex;
+    justify-content: space-between;
+}
+.arriba i {
+    font-size:2.5rem;
+    color: white;
+    margin-top: 10px;
+}
+.site-header {
+    background-color:#1B1B2D;
+}
+.site-header a {
+    text-decoration: none;
+}
+.site-header p {
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    color: white;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.site-header .navegacion {
+    text-align: center;
+    display: none;
+    padding-bottom: 25px;
+}
+.navegacion a {
+    font-size: 1.2rem;
+    text-align: center;
+    color: white;
+    display: block;
+}
+.navegacion a:hover {
+    color: var(--rojo);
+}
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .site-header .navegacion {
+        display: inline-block;
+
+    }
+    .navegacion a {
+        display: inline-block;
+        padding: 1.5rem;
+    }
+    .arriba i {
+        display: none;
+    }
+}
+/** De que trata el canal? **/
+.informacion {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+@media (min-width: 768px) {
+    .informacion {
+        padding-bottom: 80px;
+    }
+}
+.informacion h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+    line-height: 1.4;
+}
+.informacion h2 span {
+    color: var(--rojo);
+    font-weight: 700;
+}
+.informacion p {
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    line-height: 2;
+}
+@media (min-width: 768px) {
+    .informacion h2 {
+        font-size: 2.4rem;
+        line-height: 2;
+    }
+    .informacion p {
+        font-size: 1.2rem;
+        line-height: 2;
+    }
+}
+.informacion p a {
+    color: rgb(201, 45, 45);
+    text-decoration: none;
+}
+.informacion p a:hover {
+    font-weight: bold;
+}
+.twitch {
+    display: flex;
+    justify-content: center;
+}
+.btn-twitch {
+    text-decoration: none;
+    background-color: #6441a5;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    padding: 1.04rem 2.32rem;
+    font-size: 1.36rem;
+    margin-bottom: 20px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+}
+.btn-twitch:hover {
+    background-color: white;
+    color: #6441a5;
+    border: 5px solid #6441a5;
+    transition: .3s all ease-in-out ;
+}
+
+/** Jugador Profesional **/
+.jugador {
+    background-image: url(../img/fortnite.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 250px;
+    display: flex;
+    position: relative;
+}
+.jugador:before {
+	content:'';
+	position: absolute;
+        top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.5);
+}
+@media (min-width: 768px) {
+    .jugador {
+        height: 570px;
+    }
+}
+.jugador h3 {
+    font-size: 1.7rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    line-height: 1.5;
+    font-weight: 700;
+    font-family: 'Rubik', sans-serif;
+    position: relative;
+}
+.jugador h3 span {
+    color: var(--rojo);
+}
+@media (min-width: 768px) {
+    .jugador h3 {
+        font-size: 3rem;
+        margin-top: 200px;
+    }
+    .jugador h3 span {
+        font-size: 3.3rem;
+    }
+}
+.aion {
+    margin-top: 70px;
+    text-align: center;
+    position: relative;
+}
+.aion a {
+    text-decoration: none;
+    background-color: var(--rojo);
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    padding: 1rem 2.9rem;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+}
+.aion a:hover {
+    background-color: white;
+    color: var(--rojo);
+    border: 5px solid var(--rojo);
+    transition: .3s all ease-in-out ;
+}
+@media (min-width: 768px) {
+    .aion {
+        margin-top: 170px;
+    }
+    .aion a {
+        font-size: 1.5rem;
+        padding: 1.5rem 3rem;
+    }
+}
+/** Profort  **/
+.profort {
+    background-image: url(../img/fondofort.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+@media (min-width: 768px) {
+    .profort {
+        background-image: url(../img/fondorecort.jpg);
+        height: 500px;
+        justify-content: center;
+    }
+}
+.profort:before {
+	content:'';
+	position: absolute;
+        top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.5);
+}
+.profort h3 {
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    line-height: 1.5;
+    font-weight: 700;
+    font-family: 'Rubik', sans-serif;
+    position: relative;
+    margin-left: 20px;
+}
+.profort h3 span {
+    color: var(--rojo);
+}
+@media (min-width: 768px) {
+    .profort h3 {
+        font-size: 3rem;
+    }
+}
+
+/** Quien es Denis Fortnite? **/
+.sobre h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+    line-height: 1.4;
+}
+.sobre p {
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    line-height: 2;
+}
+@media (min-width: 768px) {
+    .sobre h2 {
+        font-size: 2.4rem;
+        line-height: 2;
+    }
+    .sobre p {
+        font-size: 1.2rem;
+        line-height: 2;
+    }
+}
+.sobre-mi {
+    display: flex;
+    justify-content: center;
+}
+.sobre-mi a {
+    text-decoration: none;
+    background-color: #6441a5;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    padding: 1.04rem 2.32rem;
+    font-size: 1.36rem;
+    margin-bottom: 20px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+}
+.sobre-mi a:hover {
+    background-color: white;
+    color: #6441a5;
+    border: 5px solid #6441a5;
+    transition: .3s all ease-in-out ;
+}
+.j {
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+@media (min-width: 768px) {
+    .j {
+        margin-left: 30px;
+    }
+}
+/** Footer **/
+.site-footer {
+    margin-top: 40px;
+    background-color: #3a3434;
+    margin-bottom: 0;
+}
+.site-footeri {
+    margin-top: 0;
+}
+.icono2 {
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    color: white;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.barra-footer a {
+    text-decoration: none;
+}
+.copy {
+    color: white;
+    text-align: center;
+    font-size: .7rem;
+    margin-bottom: 0;
+}
+@media (min-width: 768px) {
+    .barra-footer {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.redes {
+    text-align: center;
+}
+.redes a {
+    font-size: 1.5rem;
+    color: white;
+    margin-right: 30px;
+}
+.redes a:last-of-type {
+    margin-right: 0;
+}
+
+/** Sobre Mi **/
+.tit {
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Rubik', sans-serif;
+}
+.tit span {
+    color: var(--rojo);
+}
+.tit h1 {
+    font-size: 3.3rem;
+}
+@media (min-width: 768px) {
+    .tit h1 {
+        font-size: 4rem;
+    }
+}
+.contenido-nosotros p {
+    font-size: 1rem;
+}
+.click {
+    text-decoration: none;
+    color: var(--rojo);
+}
+.click:hover {
+    font-weight: 700;
+}
+.texto-sobre {
+    margin-top: 70px;
+}
+@media (min-width: 768px) {
+    .contenido-nosotros {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 10px;
+    }
+    .contenido-nosotros img {
+        margin-left: 10px;
+    }
+    .contenido-nosotros .texto-sobre p {
+        line-height: 2.3;
+    }
+    .texto-sobre {
+        margin-top: 0;
+    }
+}
+.perisfericos h2,
+.pc h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+.perisfericos h2 span,
+.pc h2 span {
+    color: var(--rojo);
+}
+.perisfericos ul,
+.pc ul {
+    text-align: center;
+    margin-right: 30px;
+}
+.perisfericos ul li,
+.pc ul li {
+    list-style: none;
+    font-size: 1rem;
+}
+.perisfericos ul li span,
+.pc ul li span {
+    font-weight: 700;
+}
+.peris {
+    margin-top: 150px;
+}
+@media (min-width: 768px) {
+    .peris {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 100px;
+    }
+}
+/** Contacto **/
+
+.contacto h1 {
+    text-align: center  ;
+    font-size: 4rem;
+}
+.contacto p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.formulario-contacto .campo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.formulario-contacto .campo label {
+    flex: 0 0 4rem;
+    font-size: .9rem;
+}
+.formulario-contacto .campo input:not([type="submit"]),
+.formulario-contacto textarea{
+    flex: 1;
+    border: 1px solid #e1e1e1;
+    padding: 1rem;
+}
+.formulario-contacto textarea {
+    height: 200px;
+}
+.formulario-contacto .enviar {
+    display: flex;
+    justify-content: center;
+}
+.formulario-contacto .enviar input {
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    border: 2px solid #e1e1e1;
+}
+.formulario-contacto .enviar input:hover {
+    cursor: pointer;
+}
+.campo input {
+    font-size: 1rem;
+}
+.campo textarea {
+    font-size: 1rem;
+}
+/** Quote **/
+.quote {
+    text-align: center;
+    margin-bottom: 0;
+}
+.quote img {
+    height: 500px;
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .agrupador {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0;
+    }
+    .quote {
+        flex: 0 0 25%;
+        padding-top: 50px;
+        margin-right: 20px;
+    }
+    .quote img {
+        height: 400px;
+    }
+}
+/** Programado Por **/
+.abajo {
+    display: flex;
+    justify-content: space-between;
+}
+.progr {
+    color: white;
+    font-size: .7rem;
+}
+.progr a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.progr a:hover {
+    color: var(--rojo);
+}
